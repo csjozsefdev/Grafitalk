@@ -1,0 +1,196 @@
+{
+  "spec_version": 1,
+  "exported_at": "2026-06-08T20:44:53.027913+00:00",
+  "project": {
+    "id": 16,
+    "name": "Fejlesztesi naplo",
+    "path": "C:\\Projektek\\Fejlesztesi naplo",
+    "path_accessible": true,
+    "created_at": "2026-06-08T13:25:52+00:00",
+    "updated_at": "2026-06-08T13:27:25+00:00",
+    "last_opened_at": "2026-06-08T13:27:25+00:00",
+    "preferred_ide": null,
+    "is_active": true,
+    "category": "Personal Projects",
+    "status": "active",
+    "notes": null,
+    "last_refreshed_at": null,
+    "has_open_session": true,
+    "latest_session": {
+      "id": 8,
+      "started_at": "2026-06-08T13:27:25+00:00",
+      "ended_at": null,
+      "is_active": true,
+      "status": "active",
+      "summary": null,
+      "exit_note": null,
+      "blocker": null,
+      "next_step": null
+    },
+    "summary_preview": {
+      "headline": "Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+      "summary_text": "Where you left off: Mobile app for home developmental routines — timer, points, daily closure, rewards.\nSession still open (started today).\nProject focus: Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+      "generated_at": "2026-06-08T13:27:25+00:00",
+      "source": "summary_engine"
+    },
+    "git_status": {
+      "state": "unknown",
+      "label": "No scan yet",
+      "is_git_repo": false,
+      "is_dirty": false,
+      "branch": null
+    },
+    "has_resume": false,
+    "open_task_count": null,
+    "latest_scan_at": null
+  },
+  "resume_panel": {
+    "startup_summary": {
+      "headline": "Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+      "summary_text": "Where you left off: Mobile app for home developmental routines — timer, points, daily closure, rewards.\nSession still open (started today).\nProject focus: Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+      "scroll_excerpt": "Where you left off: Mobile app for home developmental routines — timer, points, daily closure, rewards.\nSession still open (started today).\nProject focus: Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+      "generated_at": "2026-06-08T13:27:25+00:00",
+      "grifi_icon_state": "ready",
+      "source": "summary_engine",
+      "sources_used": [
+        "README.md",
+        "active session"
+      ],
+      "attributed_lines": [
+        {
+          "text": "Where you left off: Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+          "source": "README.md"
+        },
+        {
+          "text": "Session still open (started today).",
+          "source": "README.md"
+        },
+        {
+          "text": "Project focus: Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+          "source": "README.md"
+        }
+      ],
+      "timeline": [
+        {
+          "session_id": 8,
+          "started_at": "2026-06-08T13:27:25+00:00",
+          "ended_at": null,
+          "status": "active",
+          "exit_note_preview": null,
+          "duration_label": null
+        }
+      ],
+      "away_label": null,
+      "workflow_files": [
+        "README.md"
+      ],
+      "task_markers": [],
+      "confidence": "medium",
+      "mvp_sections": [
+        {
+          "title": "Where you left off",
+          "body": "Where you left off: Mobile app for home developmental routines — timer, points, daily closure, rewards.\nSession still open (started today).\nProject focus: Mobile app for home developmental routines — timer, points, daily closure, rewards."
+        },
+        {
+          "title": "Notes on file",
+          "body": "Project focus: Mobile app for home developmental routines — timer, points, daily closure, rewards."
+        },
+        {
+          "title": "Code markers (detail)",
+          "body": "README excerpt: Mobile app for home developmental routines — timer, points, daily closure, rewards."
+        },
+        {
+          "title": "Session",
+          "body": "Active session since 2026-06-08T13:27:25+00:00"
+        },
+        {
+          "title": "Context",
+          "body": "Confidence: medium — add an Exit Note for a clearer resume next time."
+        }
+      ]
+    },
+    "workflow_files": [
+      "README.md"
+    ],
+    "sources_used": [
+      "README.md",
+      "active session"
+    ],
+    "blocker": null,
+    "next_step": null,
+    "exit_note": null,
+    "modified_files": [],
+    "stored_resume_excerpt": null,
+    "git_status": {
+      "state": "unknown",
+      "label": "No scan yet",
+      "is_git_repo": false,
+      "is_dirty": false,
+      "branch": null
+    },
+    "has_stored_resume": false,
+    "latest_session": {
+      "id": 8,
+      "started_at": "2026-06-08T13:27:25+00:00",
+      "ended_at": null,
+      "is_active": true,
+      "status": "active",
+      "summary": null,
+      "exit_note": null,
+      "blocker": null,
+      "next_step": null
+    },
+    "last_opened_at": "2026-06-08T13:27:25+00:00",
+    "open_task_count": null,
+    "latest_scan_at": null,
+    "last_refreshed_at": null,
+    "confidence": "medium",
+    "mvp_sections": [
+      {
+        "title": "Where you left off",
+        "body": "Where you left off: Mobile app for home developmental routines — timer, points, daily closure, rewards.\nSession still open (started today).\nProject focus: Mobile app for home developmental routines — timer, points, daily closure, rewards."
+      },
+      {
+        "title": "Notes on file",
+        "body": "Project focus: Mobile app for home developmental routines — timer, points, daily closure, rewards."
+      },
+      {
+        "title": "Code markers (detail)",
+        "body": "README excerpt: Mobile app for home developmental routines — timer, points, daily closure, rewards."
+      },
+      {
+        "title": "Session",
+        "body": "Active session since 2026-06-08T13:27:25+00:00"
+      },
+      {
+        "title": "Context",
+        "body": "Confidence: medium — add an Exit Note for a clearer resume next time."
+      }
+    ],
+    "timeline": [
+      {
+        "session_id": 8,
+        "started_at": "2026-06-08T13:27:25+00:00",
+        "ended_at": null,
+        "status": "active",
+        "exit_note_preview": null,
+        "duration_label": null
+      }
+    ],
+    "attributed_lines": [
+      {
+        "text": "Where you left off: Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+        "source": "README.md"
+      },
+      {
+        "text": "Session still open (started today).",
+        "source": "README.md"
+      },
+      {
+        "text": "Project focus: Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+        "source": "README.md"
+      }
+    ],
+    "away_label": null
+  }
+}

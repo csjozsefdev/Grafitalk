@@ -1,0 +1,22 @@
+Project:
+Mesencsi webshop
+
+Current status:
+Deployment is nearly ready.
+
+What changed:
+- Manual QA completed.
+- Barion sandbox flow tested.
+- Production deployment is waiting for Barion production credentials.
+
+Current blocker:
+- Barion production key / merchant approval.
+
+Next step:
+- Deploy once Barion credentials are available.
+
+Estimated time:
+Approximately 1 day after credentials are received.
+
+Notes:
+This context is for draft generation only. GrafiTalk must not send messages automatically.

@@ -1,0 +1,151 @@
+:root {
+  /*
+   * Communication Studio — light industrial graphite
+   * Background < Panels < Cards (clear hierarchy, no pure white)
+   */
+
+  /* Palette anchors */
+  --gt-bg-deep: #cfd6de;
+  --gt-bg-mid: #d7dde3;
+  --gt-panel: #e5eaf0;
+  --gt-panel-soft: #edf1f5;
+  --gt-card: #f0f3f6;
+  --gt-card-sheen: #f4f6f8;
+
+  --gt-sheen-strong: rgba(255, 255, 255, 0.38);
+  --gt-sheen-soft: rgba(255, 255, 255, 0.22);
+  --gt-sheen-whisper: rgba(255, 255, 255, 0.12);
+
+  /* Workspace */
+  --gt-bg-workspace: #d7dde3;
+  --gt-bg-workspace-gradient: linear-gradient(
+    135deg,
+    #e3e8ee 0%,
+    #d7dde3 42%,
+    #c8d0d9 100%
+  );
+  --gt-bg-sidebar-gradient: linear-gradient(
+    180deg,
+    #edf1f5 0%,
+    #e5eaf0 55%,
+    #d7dde3 100%
+  );
+  --gt-bg-main-gradient: linear-gradient(
+    168deg,
+    #cfd6de 0%,
+    #d7dde3 45%,
+    #cfd6de 100%
+  );
+
+  /* Surfaces */
+  --gt-surface-panel: linear-gradient(180deg, #edf1f5 0%, #e5eaf0 100%);
+  --gt-surface-panel-flat: #e5eaf0;
+  --gt-surface-card: linear-gradient(
+    180deg,
+    #f4f6f8 0%,
+    #f0f3f6 55%,
+    #e5eaf0 100%
+  );
+  --gt-surface-card-flat: #f0f3f6;
+  --gt-surface-hero: linear-gradient(
+    180deg,
+    #f4f6f8 0%,
+    #f0f3f6 42%,
+    #edf1f5 100%
+  );
+  --gt-surface-document: #f4f6f8;
+  --gt-surface-inset: #d7dde3;
+  --gt-surface-muted: #e5eaf0;
+  --gt-surface-raised: #f0f3f6;
+
+  /* Borders */
+  --gt-border: rgba(148, 163, 184, 0.26);
+  --gt-border-strong: rgba(120, 135, 150, 0.3);
+  --gt-border-whisper: rgba(148, 163, 184, 0.14);
+
+  /* Neo-metal depth */
+  --gt-neu-recessed:
+    inset 0 1px 3px rgba(100, 116, 139, 0.12),
+    inset 0 0 0 1px rgba(148, 163, 184, 0.08);
+  --gt-neu-raised:
+    3px 4px 12px rgba(100, 116, 139, 0.28),
+    -2px -2px 8px rgba(255, 255, 255, 0.2),
+    inset 0 1px 0 var(--gt-sheen-whisper);
+  --gt-neu-float:
+    5px 8px 22px rgba(100, 116, 139, 0.26),
+    -4px -4px 12px rgba(255, 255, 255, 0.24),
+    inset 0 1px 0 var(--gt-sheen-soft);
+  --gt-neu-hero:
+    8px 14px 36px rgba(100, 116, 139, 0.28),
+    -5px -5px 16px rgba(255, 255, 255, 0.28),
+    inset 0 1px 0 var(--gt-sheen-soft);
+  --gt-neu-lift:
+    10px 16px 40px rgba(100, 116, 139, 0.3),
+    -6px -6px 18px rgba(255, 255, 255, 0.3);
+  --gt-neu-inset:
+    inset 3px 3px 8px rgba(100, 116, 139, 0.22),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.18);
+  --gt-neu-panel:
+    inset 0 1px 0 var(--gt-sheen-whisper),
+    0 1px 4px rgba(100, 116, 139, 0.1);
+
+  --gt-shadow-sm: 2px 2px 6px rgba(100, 116, 139, 0.18);
+  --gt-shadow-float: var(--gt-neu-float);
+  --gt-shadow-lift: var(--gt-neu-lift);
+  --gt-highlight-metal: var(--gt-neu-raised);
+
+  /* Text */
+  --gt-text: #111827;
+  --gt-text-secondary: #475569;
+  --gt-text-muted: #64748b;
+  --gt-text-placeholder: #94a3b8;
+
+  /* Grafi Green */
+  --gt-green: #22c55e;
+  --gt-green-hover: #16a34a;
+  --gt-green-active: #15803d;
+  --gt-green-soft: rgba(34, 197, 94, 0.1);
+  --gt-green-soft-solid: #e8f5ec;
+  --gt-green-border: rgba(34, 197, 94, 0.32);
+  --gt-green-ring: rgba(34, 197, 94, 0.22);
+
+  --gt-neutral: #e5eaf0;
+  --gt-neutral-hover: #edf1f5;
+  --gt-neutral-active: #d7dde3;
+
+  --gt-font: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --gt-font-document: "Segoe UI", "Inter", system-ui, sans-serif;
+  --gt-text-sm: 0.8125rem;
+  --gt-text-base: 0.9375rem;
+  --gt-text-lg: 1.0625rem;
+  --gt-text-xl: 1.25rem;
+  --gt-text-hero: 1.125rem;
+  --gt-line-body: 1.65;
+  --gt-line-document: 1.8;
+  --gt-measure: 68ch;
+
+  --gt-space-xs: 0.25rem;
+  --gt-space-sm: 0.5rem;
+  --gt-space-md: 0.75rem;
+  --gt-space-lg: 1rem;
+  --gt-space-xl: 1.5rem;
+  --gt-space-2xl: 2rem;
+
+  --gt-radius-sm: 10px;
+  --gt-radius-md: 14px;
+  --gt-radius-lg: 18px;
+  --gt-radius-xl: 24px;
+  --gt-radius-organic-lg: 26px 20px 28px 18px;
+  --gt-radius-organic-md: 16px 20px 14px 18px;
+  --gt-radius-organic-sm: 12px 10px 14px 11px;
+  --gt-radius-pill: 999px;
+
+  --gt-glow-green-soft: 0 0 20px rgba(34, 197, 94, 0.16);
+  --gt-glow-blue-gray: 0 0 24px rgba(100, 116, 139, 0.1);
+
+  /* Workbench column widths (settings sidebar; workbench grid uses literals in app.css) */
+  --gt-sidebar-width: 280px;
+  --gt-main-min-width: 520px;
+  --gt-context-width: 320px;
+  --gt-context-max-width: 320px;
+}

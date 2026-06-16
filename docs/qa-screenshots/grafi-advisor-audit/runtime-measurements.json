@@ -1,0 +1,473 @@
+{
+  "viewport": {
+    "innerWidth": 1280,
+    "innerHeight": 820,
+    "devicePixelRatio": 1.25
+  },
+  "document": {
+    "scrollWidth": 1280,
+    "scrollHeight": 820,
+    "bodyScrollWidth": 1280,
+    "bodyScrollHeight": 820
+  },
+  "elements": {
+    "host": {
+      "rect": {
+        "x": 16,
+        "y": 650,
+        "width": 340,
+        "height": 150,
+        "top": 650,
+        "right": 356,
+        "bottom": 800,
+        "left": 16
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "fixed",
+        "display": "block",
+        "width": "340px",
+        "height": "150px",
+        "margin": "0px",
+        "padding": "0px",
+        "overflow": "visible",
+        "transform": "none",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "1000",
+        "pointerEvents": "none",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "advisor": {
+      "rect": {
+        "x": 16,
+        "y": 650,
+        "width": 340,
+        "height": 150,
+        "top": 650,
+        "right": 356,
+        "bottom": 800,
+        "left": 16
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "relative",
+        "display": "block",
+        "width": "340px",
+        "height": "150px",
+        "margin": "0px",
+        "padding": "0px",
+        "overflow": "visible",
+        "transform": "none",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "bubble": {
+      "rect": {
+        "x": 16,
+        "y": 650,
+        "width": 340,
+        "height": 150,
+        "top": 650,
+        "right": 356,
+        "bottom": 800,
+        "left": 16
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "static",
+        "display": "flex",
+        "width": "340px",
+        "height": "150px",
+        "margin": "0px",
+        "padding": "0px",
+        "overflow": "visible",
+        "transform": "none",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "figureColumn": {
+      "rect": {
+        "x": 16,
+        "y": 650,
+        "width": 108,
+        "height": 150,
+        "top": 650,
+        "right": 124,
+        "bottom": 800,
+        "left": 16
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "static",
+        "display": "flex",
+        "width": "108px",
+        "height": "150px",
+        "margin": "0px",
+        "padding": "0px",
+        "overflow": "visible",
+        "transform": "none",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "figureWrap": {
+      "rect": {
+        "x": 16,
+        "y": 650,
+        "width": 108,
+        "height": 150,
+        "top": 650,
+        "right": 124,
+        "bottom": 800,
+        "left": 16
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "static",
+        "display": "block",
+        "width": "108px",
+        "height": "150px",
+        "margin": "0px",
+        "padding": "0px",
+        "overflow": "visible",
+        "transform": "none",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "figure": {
+      "rect": {
+        "x": 16,
+        "y": 650,
+        "width": 108,
+        "height": 150,
+        "top": 650,
+        "right": 124,
+        "bottom": 800,
+        "left": 16
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "static",
+        "display": "block",
+        "width": "108px",
+        "height": "150px",
+        "margin": "0px",
+        "padding": "0px",
+        "overflow": "visible",
+        "transform": "none",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "figureInner": {
+      "rect": {
+        "x": 18.974519729614258,
+        "y": 649.110595703125,
+        "width": 109.98103332519531,
+        "height": 151.7088623046875,
+        "top": 649.110595703125,
+        "right": 128.95555305480957,
+        "bottom": 800.8194580078125,
+        "left": 18.974519729614258
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "static",
+        "display": "flex",
+        "width": "108px",
+        "height": "150px",
+        "margin": "0px",
+        "padding": "0px",
+        "overflow": "visible",
+        "transform": "matrix(1.00391, 0.0103908, -0.0103908, 1.00391, 3.96503, -0.0349668)",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "image": {
+      "rect": {
+        "x": 18.974519729614258,
+        "y": 649.110595703125,
+        "width": 109.98103332519531,
+        "height": 151.7088623046875,
+        "top": 649.110595703125,
+        "right": 128.95555305480957,
+        "bottom": 800.8194580078125,
+        "left": 18.974519729614258
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "static",
+        "display": "block",
+        "width": "108px",
+        "height": "150px",
+        "margin": "0px",
+        "padding": "0px",
+        "overflow": "clip",
+        "transform": "none",
+        "objectFit": "contain",
+        "objectPosition": "50% 100%",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "panel": {
+      "rect": {
+        "x": 133.59375,
+        "y": 669.15625,
+        "width": 222.40625,
+        "height": 90.84375,
+        "top": 669.15625,
+        "right": 356,
+        "bottom": 760,
+        "left": 133.59375
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "relative",
+        "display": "block",
+        "width": "222.406px",
+        "height": "90.8438px",
+        "margin": "0px 0px 40px",
+        "padding": "11.2px 13.6px",
+        "overflow": "visible",
+        "transform": "none",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgb(240, 243, 246)"
+      }
+    },
+    "app": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 820,
+        "top": 0,
+        "right": 1280,
+        "bottom": 820,
+        "left": 0
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "relative",
+        "display": "flex",
+        "width": "1280px",
+        "height": "820px",
+        "margin": "0px",
+        "padding": "0px",
+        "overflow": "hidden",
+        "transform": "none",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "layout": {
+      "rect": {
+        "x": 0,
+        "y": 73.265625,
+        "width": 1280,
+        "height": 746.734375,
+        "top": 73.265625,
+        "right": 1280,
+        "bottom": 820,
+        "left": 0
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "relative",
+        "display": "grid",
+        "width": "1280px",
+        "height": "746.734px",
+        "margin": "0px",
+        "padding": "0px",
+        "overflow": "hidden",
+        "transform": "none",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "1",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    "sidebar": {
+      "rect": {
+        "x": 0,
+        "y": 73.265625,
+        "width": 240,
+        "height": 746.734375,
+        "top": 73.265625,
+        "right": 240,
+        "bottom": 820,
+        "left": 0
+      },
+      "overflow": {
+        "leftOverflow": 0,
+        "topOverflow": 0,
+        "rightOverflow": 0,
+        "bottomOverflow": 0
+      },
+      "computed": {
+        "position": "relative",
+        "display": "flex",
+        "width": "240px",
+        "height": "746.734px",
+        "margin": "0px",
+        "padding": "12px",
+        "overflow": "hidden auto",
+        "transform": "none",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "zIndex": "auto",
+        "pointerEvents": "auto",
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      }
+    }
+  },
+  "image": {
+    "src": "http://localhost:5173/src/vendor/grafi/assets/grafi-transparent-v5.png",
+    "naturalWidth": 349,
+    "naturalHeight": 470,
+    "complete": true
+  },
+  "hitTest": {
+    "hostCenter": [
+      "grafi-bubble__message",
+      "grafi-bubble__panel",
+      "grafi-bubble grafi-bubble--expanded",
+      "grafi-advisor grafi-advisor--info grafi-advisor--placement-static grafi-advisor--expanded grafi-advisor--motion",
+      "gt-sidebar",
+      "gt-layout",
+      "gt-app",
+      "",
+      "",
+      ""
+    ],
+    "figureCenter": [
+      "grafi-figure__img",
+      "grafi-figure__inner",
+      "grafi-figure grafi-figure--motion",
+      "grafi-bubble__figure-wrap",
+      "grafi-bubble__figure-column",
+      "grafi-bubble grafi-bubble--expanded",
+      "grafi-advisor grafi-advisor--info grafi-advisor--placement-static grafi-advisor--expanded grafi-advisor--motion",
+      "gt-sidebar",
+      "gt-layout",
+      "gt-app",
+      "",
+      "",
+      ""
+    ],
+    "panelCenter": [
+      "grafi-bubble__message",
+      "grafi-bubble__panel",
+      "grafi-bubble grafi-bubble--expanded",
+      "grafi-advisor grafi-advisor--info grafi-advisor--placement-static grafi-advisor--expanded grafi-advisor--motion",
+      "gt-main",
+      "gt-layout",
+      "gt-app",
+      "",
+      "",
+      ""
+    ]
+  },
+  "domPath": [
+    "div.gt-grafi-host",
+    "section.grafi-advisor.grafi-advisor--info.grafi-advisor--placement-static.grafi-advisor--expanded.grafi-advisor--motion",
+    "div.grafi-bubble.grafi-bubble--expanded",
+    "div.grafi-bubble__figure-column",
+    "div.grafi-bubble__figure-wrap",
+    "div.grafi-figure.grafi-figure--motion",
+    "div.grafi-figure__inner",
+    "img.grafi-figure__img"
+  ],
+  "consoleLogs": [
+    "[debug] [vite] connecting...",
+    "[debug] [vite] connected.",
+    "[info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+  ]
+}

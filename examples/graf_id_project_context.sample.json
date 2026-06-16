@@ -1,0 +1,19 @@
+{
+  "source": "graf-id",
+  "schema_version": "0.1",
+  "project_name": "Mesencsi webshop",
+  "current_status": "Deployment is nearly ready.",
+  "changes": [
+    "Manual QA completed.",
+    "Barion sandbox flow tested.",
+    "Production deployment is waiting for Barion production credentials."
+  ],
+  "blockers": [
+    "Barion production key / merchant approval."
+  ],
+  "next_steps": [
+    "Deploy once Barion credentials are available."
+  ],
+  "estimated_time": "Approximately 1 day after credentials are received.",
+  "notes": "This context is for draft generation only. GrafiTalk must not send messages automatically."
+}

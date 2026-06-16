@@ -1,0 +1,197 @@
+{
+  "checkedAt": "2026-06-15T16:48:42.479Z",
+  "launchMode": {
+    "terminalShows": "npx @tauri-apps/cli dev",
+    "viteDev": "http://localhost:5173",
+    "tauriUsesDevUrl": true,
+    "distUsedInDev": false,
+    "tauriWindow": {
+      "width": 1280,
+      "height": 820,
+      "minWidth": 960,
+      "minHeight": 640
+    }
+  },
+  "cssCompare": {
+    "sourceFile": "src/styles/app.css",
+    "sourceGrid": "280px minmax(520px, 1fr) 320px",
+    "distFiles": [
+      {
+        "file": "dist/assets/GrafiTalkSplash-CsUxQlog.css",
+        "hasGtLayout": true,
+        "gridRules": [
+          "grid-template-columns:280px minmax(520px,1fr) 320px",
+          "grid-template-columns:280px minmax(0,1fr)"
+        ],
+        "editorMaxWidth": true
+      },
+      {
+        "file": "dist/assets/main-6M1CaRxD.css",
+        "hasGtLayout": false,
+        "gridRules": [],
+        "editorMaxWidth": false
+      },
+      {
+        "file": "dist/assets/qaVisual-B0GBnGm3.css",
+        "hasGtLayout": false,
+        "gridRules": [],
+        "editorMaxWidth": false
+      }
+    ]
+  },
+  "runtime": {
+    "dev": {
+      "label": "vite-dev-5173",
+      "url": "http://localhost:5173/",
+      "viewport": {
+        "innerWidth": 1280,
+        "innerHeight": 820,
+        "devicePixelRatio": 1
+      },
+      "documentScrollWidth": 1280,
+      "stylesheets": [],
+      "inlineStyleSheetCount": 8,
+      "layoutClassName": "gt-layout",
+      "gridTemplateColumns": "280px 680px 320px",
+      "mediaMatches": {
+        "maxWidth1120": false
+      },
+      "elements": {
+        "sidebar": {
+          "width": 280,
+          "height": 746.734375,
+          "computedWidth": "280px",
+          "computedMaxWidth": "280px",
+          "computedFlex": "0 1 auto",
+          "display": "flex"
+        },
+        "main": {
+          "width": 680,
+          "height": 746.734375,
+          "computedWidth": "680px",
+          "computedMaxWidth": "none",
+          "computedFlex": "0 1 auto",
+          "display": "flex"
+        },
+        "context": {
+          "width": 320,
+          "height": 746.734375,
+          "computedWidth": "320px",
+          "computedMaxWidth": "320px",
+          "computedFlex": "0 1 auto",
+          "display": "flex"
+        },
+        "documentSurface": {
+          "width": 648,
+          "height": 550.8125,
+          "computedWidth": "648px",
+          "computedMaxWidth": "none",
+          "computedFlex": "1 1 0%",
+          "display": "flex"
+        },
+        "documentEditor": {
+          "width": 549.84375,
+          "height": 96,
+          "computedWidth": "549.844px",
+          "computedMaxWidth": "549.844px",
+          "computedFlex": "0 1 auto",
+          "display": "block"
+        },
+        "contextSection": {
+          "width": 295,
+          "height": 722.734375,
+          "computedWidth": "295px",
+          "computedMaxWidth": "none",
+          "computedFlex": "1 1 0%",
+          "display": "flex"
+        },
+        "contextEditor": {
+          "width": 269,
+          "height": 643.703125,
+          "computedWidth": "269px",
+          "computedMaxWidth": "none",
+          "computedFlex": "1 1 0%",
+          "display": "block"
+        }
+      }
+    },
+    "dist": {
+      "label": "dist-preview-4173",
+      "url": "http://localhost:4173/",
+      "viewport": {
+        "innerWidth": 1280,
+        "innerHeight": 820,
+        "devicePixelRatio": 1
+      },
+      "documentScrollWidth": 1280,
+      "stylesheets": [
+        "http://localhost:4173/assets/GrafiTalkSplash-CsUxQlog.css",
+        "http://localhost:4173/assets/main-6M1CaRxD.css"
+      ],
+      "inlineStyleSheetCount": 1,
+      "layoutClassName": "gt-layout",
+      "gridTemplateColumns": "280px 680px 320px",
+      "mediaMatches": {
+        "maxWidth1120": false
+      },
+      "elements": {
+        "sidebar": {
+          "width": 280,
+          "height": 746.734375,
+          "computedWidth": "280px",
+          "computedMaxWidth": "280px",
+          "computedFlex": "0 1 auto",
+          "display": "flex"
+        },
+        "main": {
+          "width": 680,
+          "height": 746.734375,
+          "computedWidth": "680px",
+          "computedMaxWidth": "none",
+          "computedFlex": "0 1 auto",
+          "display": "flex"
+        },
+        "context": {
+          "width": 320,
+          "height": 746.734375,
+          "computedWidth": "320px",
+          "computedMaxWidth": "320px",
+          "computedFlex": "0 1 auto",
+          "display": "flex"
+        },
+        "documentSurface": {
+          "width": 648,
+          "height": 550.8125,
+          "computedWidth": "648px",
+          "computedMaxWidth": "none",
+          "computedFlex": "1 1 0%",
+          "display": "flex"
+        },
+        "documentEditor": {
+          "width": 549.84375,
+          "height": 96,
+          "computedWidth": "549.844px",
+          "computedMaxWidth": "549.844px",
+          "computedFlex": "0 1 auto",
+          "display": "block"
+        },
+        "contextSection": {
+          "width": 295,
+          "height": 722.734375,
+          "computedWidth": "295px",
+          "computedMaxWidth": "none",
+          "computedFlex": "1 1 0%",
+          "display": "flex"
+        },
+        "contextEditor": {
+          "width": 269,
+          "height": 643.703125,
+          "computedWidth": "269px",
+          "computedMaxWidth": "none",
+          "computedFlex": "1 1 0%",
+          "display": "block"
+        }
+      }
+    }
+  }
+}

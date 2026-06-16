@@ -1,0 +1,12 @@
+{
+  "url": "http://localhost:4173/",
+  "stylesheets": [
+    "http://localhost:4173/assets/GrafiTalkSplash-CsUxQlog.css",
+    "http://localhost:4173/assets/main-6M1CaRxD.css"
+  ],
+  "layout": "280px 680px 320px",
+  "sidebar": 280,
+  "main": 680,
+  "context": 320,
+  "scrollW": 1280
+}

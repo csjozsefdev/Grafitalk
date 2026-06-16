@@ -1,0 +1,48 @@
+/* GrafiTalk light variant — white studio splash with baked-in ring artwork */
+
+.grafi-splash--grafitalk {
+  --grafi-bg: #ffffff;
+  --grafi-text: #475569;
+
+  overflow: hidden;
+  background: linear-gradient(
+    165deg,
+    #ffffff 0%,
+    #fafbfc 45%,
+    #f4f6f8 100%
+  );
+}
+
+.grafi-splash--grafitalk .grafi-splash__content {
+  gap: 1.1rem;
+}
+
+.grafi-splash--grafitalk .grafi-splash__visual {
+  width: auto;
+  max-width: min(340px, 88vw);
+  aspect-ratio: auto;
+  background: transparent;
+}
+
+.grafi-splash--grafitalk .grafi-splash__image {
+  display: block;
+  width: min(300px, 88vw);
+  max-width: 340px;
+  min-width: 260px;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+}
+
+.grafi-splash--grafitalk .grafi-splash__message {
+  font-family: var(--gt-font, "Segoe UI", system-ui, sans-serif);
+  font-weight: 450;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 420px) {
+  .grafi-splash--grafitalk .grafi-splash__image {
+    min-width: 0;
+    width: min(280px, 84vw);
+  }
+}

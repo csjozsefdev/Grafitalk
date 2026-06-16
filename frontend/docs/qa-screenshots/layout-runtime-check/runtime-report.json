@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-06-15T16:20:34.298Z",
+  "updatedAfterRebuild": "2026-06-15T16:22:00.000Z",
+  "launchMode": {
+    "currentlyRunning": "Tauri dev (`npx @tauri-apps/cli dev`)",
+    "viteDevServer": "http://localhost:5173/ (BeforeDevCommand: npm run dev --prefix ../frontend)",
+    "tauriDevUrl": "http://localhost:5173",
+    "usesFrontendDistInDev": false,
+    "frontendDistPath": "../frontend/dist (used only for production/packaged builds)",
+    "note": "Tauri dev WebView loads Vite dev server, NOT frontend/dist"
+  },
+  "sourceCss": {
+    "file": "frontend/src/styles/app.css",
+    "selector": ".gt-layout:not(.gt-layout--settings)",
+    "gridRule": "280px minmax(520px, 1fr) 320px"
+  },
+  "distCss": {
+    "beforeRebuild": {
+      "file": "frontend/dist/assets/GrafiTalkSplash-wI2vIJSE.css",
+      "gridRule": "248px minmax(0, 1fr) 288px",
+      "stale": true
+    },
+    "afterRebuild": {
+      "buildCommand": "npx vite build (npm run build failed: SettingsView.test.tsx TS error)",
+      "layoutFile": "frontend/dist/assets/GrafiTalkSplash-CsUxQlog.css",
+      "gridRule": "280px minmax(520px, 1fr) 320px",
+      "stale": false,
+      "indexHtmlStylesheets": [
+        "/assets/GrafiTalkSplash-CsUxQlog.css",
+        "/assets/main-6M1CaRxD.css"
+      ]
+    }
+  },
+  "runtimeDevVite5173": {
+    "url": "http://localhost:5173/",
+    "cssDelivery": "Vite HMR injects CSS as inline <style> tags (no hashed asset URL)",
+    "gridTemplateColumns": "280px 680px 320px",
+    "sidebarWidth": 280,
+    "mainWidth": 680,
+    "contextWidth": 320,
+    "documentScrollWidth": 1280,
+    "screenshot": "docs/qa-screenshots/layout-runtime-check/workbench-1280-after-check.png"
+  },
+  "runtimeDistPreview4173": {
+    "url": "http://localhost:4173/",
+    "stylesheets": [
+      "http://localhost:4173/assets/GrafiTalkSplash-CsUxQlog.css",
+      "http://localhost:4173/assets/main-6M1CaRxD.css"
+    ],
+    "gridTemplateColumns": "280px 680px 320px",
+    "sidebarWidth": 280,
+    "mainWidth": 680,
+    "contextWidth": 320,
+    "documentScrollWidth": 1280,
+    "screenshot": "docs/qa-screenshots/layout-runtime-check/workbench-1280-dist-preview.png"
+  },
+  "conclusion": {
+    "wasRunningInstanceUsingStaleDist": false,
+    "wasDistStaleBeforeRebuild": true,
+    "doesStaleDistExplainDevSessionLayout": false,
+    "runtimeGridMatchesSourceInBothDevAndDist": true
+  }
+}

@@ -1,0 +1,73 @@
+/* GrafiTalk — Communication Studio ambient layer */
+
+.gt-ambient {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse 70% 55% at 8% 10%,
+      rgba(71, 85, 105, 0.14) 0%,
+      transparent 58%
+    ),
+    radial-gradient(
+      ellipse 65% 50% at 92% 90%,
+      rgba(255, 255, 255, 0.7) 0%,
+      transparent 55%
+    ),
+    linear-gradient(
+      135deg,
+      #c0ccd8 0%,
+      #c8d2de 18%,
+      #d4dce6 42%,
+      #eaf0f5 54%,
+      #f6f9fb 76%,
+      #fbfcfd 100%
+    );
+}
+
+/* Soft neon-green diagonal glow — mirrored: top-right toward Grafi */
+.gt-ambient::before {
+  content: "";
+  position: absolute;
+  inset: -12%;
+  background:
+    linear-gradient(
+      135deg,
+      transparent 40%,
+      rgba(34, 197, 94, 0.05) 50%,
+      transparent 60%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 46.5%,
+      rgba(34, 197, 94, 0.24) 50%,
+      transparent 53.5%
+    );
+  filter: blur(26px);
+  opacity: 0.92;
+  transform: translate(320px, -90px);
+  pointer-events: none;
+}
+
+/* Crisp green core along the divide — mirrored match */
+.gt-ambient::after {
+  content: "";
+  position: absolute;
+  inset: -12%;
+  background: linear-gradient(
+    135deg,
+    transparent 48%,
+    rgba(34, 197, 94, 0.14) 50%,
+    transparent 52%
+  );
+  transform: translate(320px, -90px);
+  pointer-events: none;
+}
+
+.gt-app > :not(.gt-ambient) {
+  position: relative;
+  z-index: 1;
+}

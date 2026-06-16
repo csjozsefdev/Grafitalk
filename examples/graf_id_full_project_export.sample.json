@@ -1,0 +1,45 @@
+{
+  "spec_version": 1,
+  "exported_at": "2026-06-08T20:44:53.027913+00:00",
+  "project": {
+    "id": 16,
+    "name": "Fejlesztesi naplo",
+    "path": "C:\\Projektek\\Fejlesztesi naplo",
+    "category": "Personal Projects",
+    "status": "active",
+    "latest_session": {
+      "id": 8,
+      "started_at": "2026-06-08T13:27:25+00:00",
+      "is_active": true,
+      "status": "active",
+      "blocker": null,
+      "next_step": null,
+      "exit_note": null
+    },
+    "summary_preview": {
+      "headline": "Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+      "summary_text": "Where you left off: Mobile app for home developmental routines — timer, points, daily closure, rewards.\nSession still open (started today).\nProject focus: Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+      "source": "summary_engine"
+    }
+  },
+  "resume_panel": {
+    "startup_summary": {
+      "headline": "Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+      "summary_text": "Where you left off: Mobile app for home developmental routines — timer, points, daily closure, rewards.\nSession still open (started today).",
+      "workflow_files": ["README.md"],
+      "attributed_lines": [
+        {
+          "text": "Where you left off: Mobile app for home developmental routines — timer, points, daily closure, rewards.",
+          "source": "README.md"
+        },
+        {
+          "text": "Session still open (started today).",
+          "source": "README.md"
+        }
+      ]
+    },
+    "workflow_files": ["README.md"],
+    "blocker": null,
+    "next_step": null
+  }
+}

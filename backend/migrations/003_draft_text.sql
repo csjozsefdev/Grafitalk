@@ -1,0 +1,1 @@
+ALTER TABLE projects ADD COLUMN draft_text TEXT NOT NULL DEFAULT '';
