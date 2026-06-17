@@ -1,6 +1,6 @@
 # GrafiTalk — Project status
 
-**Last updated:** Core RC (post-hardening documentation pass)  
+**Last updated:** v1.0.0 automated gate pass  
 **Product line:** GrafiTalk Core  
 **Philosophy:** GrafiTalk prepares; humans send.
 
@@ -73,9 +73,12 @@ See [LIMITATIONS.md](LIMITATIONS.md). Core constraints:
 |-------|--------|
 | Backend tests (`cargo test -p backend`) | 134 passed |
 | Frontend tests (`npm run test --prefix frontend`) | 51 passed |
+| Frontend lint (`npm run lint --prefix frontend`) | Pass |
+| npm audit high (`npm audit --audit-level=high --prefix frontend`) | 0 vulnerabilities |
 | Production build (`npm run build --prefix frontend`) | Pass |
 | `cargo check -p grafitalk` | Pass |
-| Manual QA | See [QA_CHECKLIST.md](QA_CHECKLIST.md) |
+| Manual QA | Pending — [QA_CHECKLIST.md](QA_CHECKLIST.md) |
+| Clean-machine installer | Pending — [RC_1_0_RELEASE_VALIDATION.md](RC_1_0_RELEASE_VALIDATION.md) |
 
 ---
 

@@ -83,18 +83,14 @@ Honest constraints of **GrafiTalk Core RC**. Use when setting expectations or pl
 
 
 | Limitation | Detail |
-
 |------------|--------|
-
-| No archive UI | **Resolved in Core RC** — archive, restore, and rename in sidebar |
-
-| No settings screen | Minimal read-aloud preference in diagnostics modal |
-
+| Remove (archive) only | **Resolved in v1.0** — remove via sidebar `⋯` menu; restore from archived section |
+| Settings workspace | **Resolved in v1.0** — dedicated Settings screen (Grafi, read-aloud, About / Diagnostics) |
+| Export settings | Placeholder only — default export formats apply; no custom export preferences yet |
+| Read-aloud | Optional Web Speech API — unavailable on some platforms; voice selector is placeholder |
 | No template editor | Template logic is Rust code |
-
 | Client label | API supports `client_label`; create form uses name only |
-
-| Grafi advisor (in-workbench) | Upstream Grafi UI via portal host at bottom-left |
+| Grafi advisor | Upstream Grafi UI via portal host at bottom-left; disable in Settings → Grafi |
 
 
 

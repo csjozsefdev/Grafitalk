@@ -207,7 +207,7 @@ Manual verification for **GrafiTalk Core RC**. Run after meaningful changes to s
 ## Read-aloud
 
 - [ ] Speaker shows unavailable hint when speech API missing
-- [ ] Speaker disabled when draft empty or read-aloud disabled in diagnostics
+- [ ] Speaker disabled when draft empty or read-aloud disabled in Settings
 - [ ] Play/stop works when supported
 - [ ] Speech stops on project switch
 

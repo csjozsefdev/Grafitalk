@@ -129,6 +129,7 @@ Details: [Developer guide](docs/DEVELOPER_GUIDE.md) · [Release notes (RC)](docs
 
 | Document | Purpose |
 |----------|---------|
+| [Authors](AUTHORS.md) | GrafiTalk project authorship |
 | [Project status](docs/PROJECT_STATUS.md) | Completed features, remaining work, limitations |
 | [User guide](docs/USER_GUIDE.md) | Daily use, workflow, UI areas |
 | [Developer guide](docs/DEVELOPER_GUIDE.md) | Repo layout, dev setup, pipelines |

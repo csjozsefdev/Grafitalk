@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
 import type { GrafiAdvisorMessage } from "../hooks/useGrafiAdvisor";
@@ -7,6 +7,7 @@ import {
   toGrafiSettings,
   type GrafiTalkPreferences,
 } from "../types/grafiPreferences";
+import { shouldAutoExpandGrafiMessage } from "../utils/grafiTalkAdvisorUtils";
 import { GrafiAdvisor } from "../vendor/grafi/GrafiAdvisor";
 import type { GrafiDisplayMode, GrafiSeverity } from "../vendor/grafi/grafiTypes";
 import "./GrafiTalkAdvisorHost.css";
@@ -16,16 +17,6 @@ const TRANSIENT_COLLAPSE_MS = 5500;
 interface GrafiTalkAdvisorProps {
   message: GrafiAdvisorMessage | null;
   preferences: GrafiTalkPreferences;
-}
-
-export function shouldAutoExpandGrafiMessage(
-  message: GrafiAdvisorMessage
-): boolean {
-  if (isTransientGrafiMessage(message)) {
-    return true;
-  }
-
-  return message.priority === "high" || message.priority === "medium";
 }
 
 function messageToSeverity(message: GrafiAdvisorMessage): GrafiSeverity {
@@ -58,53 +49,45 @@ function messageToSeverity(message: GrafiAdvisorMessage): GrafiSeverity {
   return "info";
 }
 
+function displayModeForMessage(
+  message: GrafiAdvisorMessage | null
+): GrafiDisplayMode {
+  if (!message) {
+    return "minimized";
+  }
+
+  return shouldAutoExpandGrafiMessage(message) ? "expanded" : "minimized";
+}
+
 export function GrafiTalkAdvisor({
   message,
   preferences,
 }: GrafiTalkAdvisorProps) {
   const [displayMode, setDisplayMode] = useState<GrafiDisplayMode>("minimized");
-  const lastMessageIdRef = useRef<string | null>(null);
-  const collapseTimerRef = useRef<number | null>(null);
+  const [trackedMessageId, setTrackedMessageId] = useState<string | null>(null);
 
-  const grafiSettings = toGrafiSettings(preferences);
+  const currentMessageId = message?.id ?? null;
+
+  if (currentMessageId !== trackedMessageId) {
+    setTrackedMessageId(currentMessageId);
+    setDisplayMode(displayModeForMessage(message));
+  }
 
   useEffect(() => {
-    if (!message) {
-      lastMessageIdRef.current = null;
+    if (!message || !isTransientGrafiMessage(message)) {
+      return;
+    }
+
+    const timer = window.setTimeout(() => {
       setDisplayMode("minimized");
-      return;
-    }
-
-    if (message.id === lastMessageIdRef.current) {
-      return;
-    }
-
-    lastMessageIdRef.current = message.id;
-    setDisplayMode(
-      shouldAutoExpandGrafiMessage(message) ? "expanded" : "minimized"
-    );
-
-    if (collapseTimerRef.current !== null) {
-      window.clearTimeout(collapseTimerRef.current);
-      collapseTimerRef.current = null;
-    }
-
-    if (!isTransientGrafiMessage(message)) {
-      return;
-    }
-
-    collapseTimerRef.current = window.setTimeout(() => {
-      setDisplayMode("minimized");
-      collapseTimerRef.current = null;
     }, TRANSIENT_COLLAPSE_MS);
 
     return () => {
-      if (collapseTimerRef.current !== null) {
-        window.clearTimeout(collapseTimerRef.current);
-        collapseTimerRef.current = null;
-      }
+      window.clearTimeout(timer);
     };
   }, [message]);
+
+  const grafiSettings = toGrafiSettings(preferences);
 
   if (!grafiSettings.enabled) {
     return null;

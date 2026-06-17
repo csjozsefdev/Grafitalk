@@ -8,7 +8,6 @@ vi.mock("../vendor/grafi/assets/grafi-transparent.png", () => ({
 
 import {
   GrafiTalkAdvisor,
-  shouldAutoExpandGrafiMessage,
 } from "./GrafiTalkAdvisor";
 import { DEFAULT_GRAFI_TALK_PREFERENCES } from "../types/grafiPreferences";
 
@@ -119,34 +118,5 @@ describe("GrafiTalkAdvisor", () => {
 
     await user.click(screen.getByRole("button", { name: "Show Grafi message" }));
     expect(screen.getByText("Add context notes.")).toBeInTheDocument();
-  });
-});
-
-describe("shouldAutoExpandGrafiMessage", () => {
-  it("expands transient and medium-or-higher priority messages", () => {
-    expect(
-      shouldAutoExpandGrafiMessage({
-        id: "welcome",
-        text: "Hi",
-        priority: "low",
-      })
-    ).toBe(false);
-
-    expect(
-      shouldAutoExpandGrafiMessage({
-        id: "empty-context",
-        text: "Add context",
-        priority: "medium",
-      })
-    ).toBe(true);
-
-    expect(
-      shouldAutoExpandGrafiMessage({
-        id: "copy-success::1",
-        text: "Copied",
-        priority: "low",
-        transient: true,
-      })
-    ).toBe(true);
   });
 });

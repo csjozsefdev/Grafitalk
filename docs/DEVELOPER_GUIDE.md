@@ -33,7 +33,7 @@ The Core Release Candidate ships:
 - **Custom title bar** with window controls (Windows)
 - **GrafiTalk startup splash** (light theme, `GrafiTalkSplash` wrapper)
 
-Still out of scope: AI, auto-send, cloud sync, CRM, unlimited draft history, full settings app, permanent delete, code signing (org-dependent).
+Still out of scope: AI, auto-send, cloud sync, CRM, unlimited draft history, advanced settings (custom export defaults, accounts), permanent delete, code signing (org-dependent).
 
 ---
 
