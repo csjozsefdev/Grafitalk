@@ -138,7 +138,7 @@ Schema: [DRAFT_EXPORT_SCHEMA.md](DRAFT_EXPORT_SCHEMA.md)
 
 **Why:** Assist review without replacing human judgment or adding cloud services.
 
-**Note:** The in-workbench Grafi advisor was removed temporarily for a clean reimplementation. The startup splash remains.
+**Note:** Grafi advisor is integrated from upstream Grafi via a bottom-left portal host. Disable Grafi or adjust motion in Settings. The startup splash remains a separate light GrafiTalk overlay.
 
 ---
 

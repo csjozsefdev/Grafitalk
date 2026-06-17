@@ -72,10 +72,10 @@ describe("SettingsView", () => {
       <SettingsView
         {...baseProps}
         diagnostics={{
-          app_name: "GrafiTalk",
-          app_version: "0.1.0",
-          data_dir: "C:\\data",
-          db_path: "C:\\data\\grafitalk.db",
+          appVersion: "1.0.0",
+          dbPath: "C:\\data\\grafitalk.db",
+          projectCount: 2,
+          latestMigration: 5,
           platform: "windows",
         }}
       />

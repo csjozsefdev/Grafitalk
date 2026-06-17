@@ -6,8 +6,8 @@ GrafiTalk Core RC 1.0 ships as unsigned Windows installers for trusted testing.
 
 Build artifacts (after `.\scripts\release.ps1`):
 
-- `target/release/bundle/msi/GrafiTalk_0.1.0_x64_en-US.msi`
-- `target/release/bundle/nsis/GrafiTalk_0.1.0_x64-setup.exe`
+- `target/release/bundle/msi/GrafiTalk_1.0.0_x64_en-US.msi`
+- `target/release/bundle/nsis/GrafiTalk_1.0.0_x64-setup.exe`
 
 Verify the file hash published with your release before installing.
 

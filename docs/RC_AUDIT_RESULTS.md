@@ -1,5 +1,7 @@
 # GrafiTalk Core RC — Post-Implementation Audit Results
 
+> **Historical snapshot (2026-06-14).** Diagnostics now live in **Settings → About / Diagnostics** (`SettingsView`), not `DiagnosticsModal`. Project **Remove** uses the sidebar `⋯` menu. For current status see [PROJECT_STATUS.md](PROJECT_STATUS.md).
+
 **Date:** 2026-06-14  
 **Branch:** RC implementation (local workspace)  
 **Procedure:** [POST_RC_AUDIT.md](POST_RC_AUDIT.md)

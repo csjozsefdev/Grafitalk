@@ -59,7 +59,7 @@ Local-first **Context → Template → Generate Draft → Review → Copy / Expo
 | **P9** | Done | Documentation sync + release gate (PR 9) |
 
 | **RC1** | Done | Dynamic workflow indicator |
-| **RC2** | Done | Archive project UI + IPC |
+| **RC2** | Done | Remove (archive) project UI + IPC via `⋯` menu |
 | **RC3** | Done | Template dirty confirm |
 | **RC4** | Done | Grafi advisor + read-aloud |
 | **RC5** | Done | Custom title bar + visual polish |
@@ -68,7 +68,7 @@ Local-first **Context → Template → Generate Draft → Review → Copy / Expo
 | **RC8** | Done | Documentation sync + POST_RC_AUDIT procedure |
 | **RC9** | Done | GrafiTalk startup splash (light theme) |
 | **RC10** | Done | Project rename + archive restore + app-styled dialogs |
-| **RC11** | Done | RC cleanup + documentation pass |
+| **RC11** | Done | Settings workspace + RC cleanup + documentation pass |
 
 ---
 

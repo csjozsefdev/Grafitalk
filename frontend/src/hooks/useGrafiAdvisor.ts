@@ -43,10 +43,6 @@ export function grafiMessagePriorityRank(
   }
 }
 
-export function grafiMessageBaseId(id: string): string {
-  return id.split("::")[0] ?? id;
-}
-
 export function isTransientGrafiMessage(message: GrafiAdvisorMessage): boolean {
   return message.transient === true;
 }

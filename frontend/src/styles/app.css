@@ -80,10 +80,8 @@ button {
   flex-shrink: 0;
   width: 36px;
   height: 36px;
-  border-radius: 11px 9px 12px 10px;
-  object-fit: cover;
-  box-shadow: var(--gt-neu-raised), var(--gt-glow-green-soft);
-  transition: box-shadow 0.28s ease, transform 0.28s ease;
+  object-fit: contain;
+  transition: transform 0.28s ease;
 }
 
 .gt-titlebar__brand-text {
@@ -814,13 +812,6 @@ button {
   color: var(--gt-green-text, #15803d);
 }
 
-.gt-context__text {
-  margin: 0;
-  font-size: var(--gt-text-base);
-  color: var(--gt-text-secondary);
-  line-height: var(--gt-line-body);
-}
-
 .gt-context__editor {
   width: 100%;
   flex: 1;
@@ -1231,7 +1222,6 @@ button {
   padding: 0.55rem 0.65rem;
 }
 
-.gt-project__archive,
 .gt-project__action {
   align-self: center;
   border: 1px solid var(--gt-border-whisper);
@@ -1243,7 +1233,6 @@ button {
   cursor: pointer;
 }
 
-.gt-project__archive:hover:not(:disabled),
 .gt-project__action:hover:not(:disabled) {
   background: var(--gt-neutral-hover);
   color: var(--gt-text-secondary);
@@ -1318,43 +1307,6 @@ button {
 .gt-modal__header h2 {
   margin: 0;
   font-size: var(--gt-text-lg);
-}
-
-.gt-modal__diagnostics {
-  margin: 0 0 1rem;
-  padding: 0.75rem;
-  border-radius: var(--gt-radius-md);
-  background: var(--gt-surface-inset);
-  border: 1px solid var(--gt-border-whisper);
-  white-space: pre-wrap;
-  font-size: var(--gt-text-sm);
-  color: var(--gt-text-secondary);
-}
-
-.gt-modal__settings {
-  display: grid;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.gt-modal__checkbox {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: var(--gt-text-sm);
-  color: var(--gt-text-secondary);
-}
-
-.gt-modal__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.gt-modal__feedback {
-  margin: 0.75rem 0 0;
-  font-size: var(--gt-text-sm);
-  color: var(--gt-text-muted);
 }
 
 .gt-confirm-dialog__description {

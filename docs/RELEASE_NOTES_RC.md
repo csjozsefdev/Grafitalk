@@ -1,6 +1,6 @@
 # GrafiTalk Core — Release Candidate Notes
 
-**Version:** 0.1.0 (Core RC)  
+**Version:** 1.0.0  
 **Product line:** GrafiTalk Core  
 **Philosophy:** GrafiTalk prepares; humans send.
 
@@ -23,7 +23,7 @@ GrafiTalk Core RC is a local-first desktop communication workbench. It helps fre
 ### Project lifecycle
 
 - **Rename** active projects from the sidebar
-- **Archive** projects (data retained, hidden from active list)
+- **Remove** projects via sidebar `⋯` menu (data retained, hidden from active list — archived in SQLite)
 - **Restore** archived projects via “Show archived” section
 - App-styled **ConfirmDialog** and **NamePromptDialog** (no native `window.confirm`)
 
@@ -48,19 +48,19 @@ GrafiTalk Core RC is a local-first desktop communication workbench. It helps fre
 ### Grafi Advisor
 
 - Bottom-left contextual guidance (local only, no network)
-- Preference toggles: enabled, motion, silent mode, critical-only
+- Preference toggles in **Settings → Grafi**: enabled, motion, silent mode, critical-only
 - Template-change and workflow events trigger contextual reminders
 
 ### Read-aloud
 
 - Local **Web Speech API** text-to-speech for Current Preview
 - Disabled when unsupported; stops on project switch
-- Toggle in diagnostics modal
+- Toggle in **Settings** (Read-aloud category)
 
-### Reliability and ops
+### Settings and reliability
 
-- **Diagnostics modal** — version, DB path, five preference toggles
-- **Database backup** — export `grafitalk.db` copy via About
+- **Settings workspace** — Grafi, read-aloud, export placeholder, About / Diagnostics
+- **About / Diagnostics** — version, DB path, project count, database backup
 - **Custom title bar** (Windows) with window controls
 - **Autosave** — 500 ms debounce for context and draft; flush on project switch
 - **Hardening matrix** — backend integration tests for import, templates, export, isolation
@@ -77,8 +77,8 @@ GrafiTalk Core RC is a local-first desktop communication workbench. It helps fre
 
 | Area | Improvement |
 |------|-------------|
-| Project lifecycle | Rename, archive, restore (was create/list/select only) |
-| UX polish | Custom title bar, Grafi advisor, read-aloud, app-styled dialogs |
+| Project lifecycle | Rename, remove (archive), restore via `⋯` menu (was create/list/select only) |
+| UX polish | Custom title bar, Grafi advisor, Settings workspace, read-aloud, app-styled dialogs |
 | Workflow clarity | Dynamic step indicator; template dirty guard |
 | Release tooling | Release script, Vitest frontend tests, validation docs |
 | Startup | GrafiTalk-branded light splash |

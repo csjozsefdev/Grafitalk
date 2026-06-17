@@ -132,6 +132,18 @@ context_text column
 
 
 
+## Core concepts
+
+| Concept | Description |
+|---------|-------------|
+| **Project** | Per-client workspace; holds context, draft, template, and review metadata |
+| **Context** | Manual notes or imported Graf-ID handoff text (`context_text`) |
+| **Template** | One of five deterministic renderers (`TemplateKind`) |
+| **Draft** | Generated + editable output (`draft_text`); one latest per project |
+| **Export** | TXT, MD, JSON, or PDF file built from Current Preview |
+
+---
+
 ## Frontend components
 
 
@@ -140,15 +152,15 @@ context_text column
 
 |-----------|------|
 
-| `AppShell` | Orchestrates projects, autosave, generate, copy, export |
-
-| `ProjectSidebar` | Create/select projects, show last-used time |
-
-| `DocumentPanel` | Current Preview — draft textarea, review metadata row |
-
+| `AppShell` | Orchestrates projects, autosave, generate, copy, export, Settings |
+| `ProjectSidebar` | Create/select projects, `⋯` menu (rename/remove), archived restore |
+| `DocumentPanel` | Current Preview — draft textarea, review metadata row, read-aloud |
 | `ContextPanel` | Manual context editor + Import button |
-
 | `ActionBar` | Template selector, Generate Draft, Copy, Export |
+| `TitleBar` | Brand, dynamic workflow pill, window controls |
+| `SettingsView` | Dedicated settings workspace (Grafi, read-aloud, About / Diagnostics) |
+| `GrafiTalkAdvisor` | Bottom-left Grafi portal host |
+| `GrafiTalkSplash` | Light startup overlay |
 
 
 

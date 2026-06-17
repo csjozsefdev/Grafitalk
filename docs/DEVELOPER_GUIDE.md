@@ -2,7 +2,7 @@
 
 This guide explains how GrafiTalk is built, how data flows through the app, and how to work on it safely.
 
-For milestone status and IPC inventory, see [Progress](PROGRESS.md) and [Core status](CORE_STATUS.md).
+For milestone status and IPC inventory, see [Project status](PROJECT_STATUS.md), [Progress](PROGRESS.md), and [Core status](CORE_STATUS.md).
 
 ---
 
@@ -18,7 +18,7 @@ Context  →  Template  →  Draft  →  Review  →  Copy / Export
 
 The Core Release Candidate ships:
 
-- Project create / list / select / **rename** / **archive** / **restore**
+- Project create / list / select / **rename** / **remove (archive)** / **restore** via sidebar `⋯` menu
 - Manual `context_text` per project
 - **Graf-ID import** (JSON, TXT, MD)
 - **Five deterministic templates** (no AI)
@@ -28,7 +28,8 @@ The Core Release Candidate ships:
 - **Dynamic workflow indicator**
 - **Template-change confirmation** when manual draft edits would be overwritten
 - **Read-aloud** for Current Preview (local Web Speech API when supported)
-- **Diagnostics + database backup** (About button in title bar)
+- **Settings workspace** (Grafi, read-aloud, export placeholder, About / Diagnostics)
+- **Diagnostics + database backup** (Settings → About / Diagnostics)
 - **Custom title bar** with window controls (Windows)
 - **GrafiTalk startup splash** (light theme, `GrafiTalkSplash` wrapper)
 
@@ -232,8 +233,8 @@ Generation requires non-empty context.
 | `ContextPanel` | Context textarea + Graf-ID import |
 | `ActionBar` | Template selector, Generate, Copy, Export |
 | `TitleBar` | Brand, dynamic workflow pill, window controls |
-| `GrafiAdvisor` | Bottom-left contextual guidance |
-| `DiagnosticsModal` | About, diagnostics, backup, prefs |
+| `GrafiTalkAdvisor` | Bottom-left contextual guidance (portal host) |
+| `SettingsView` | Settings workspace: Grafi, read-aloud, export placeholder, About / Diagnostics |
 | `ConfirmDialog` / `NamePromptDialog` | App-styled lifecycle prompts |
 | `grafi-splash/GrafiTalkSplash` | Light startup overlay |
 
@@ -316,7 +317,7 @@ Validation: [RC_1_0_RELEASE_VALIDATION.md](RC_1_0_RELEASE_VALIDATION.md) · Back
 - **Manual QA:** [QA checklist](QA_CHECKLIST.md) via `npx @tauri-apps/cli dev`.
 - **No Tauri E2E** in CI yet — IPC wiring verified manually.
 
-Expected counts (RC): 134+ backend tests, 29 frontend tests.
+Expected counts (RC): 134 backend tests, 51 frontend tests.
 
 ---
 

@@ -17,7 +17,7 @@ Transform project context into human-readable communication drafts — with a ma
 ## Core workflow
 
 ```text
-Context  →  Template  →  Draft  →  Review / Edit  →  Copy / Export
+Project  →  Context  →  Template  →  Draft  →  Review  →  Copy / Export
 ```
 
 1. Select or create a **project**
@@ -52,7 +52,7 @@ The title bar workflow pill shows: Context → Template → Draft → Review →
 
 | Area | Supported |
 |------|-----------|
-| **Project management** | Create, list, select, rename, archive, restore |
+| **Project management** | Create, list, select, rename, remove (archive), restore via sidebar `⋯` menu |
 | **Context editing** | Manual notes per project; debounced autosave |
 | **Graf-ID import** | JSON, TXT, MD handoff files |
 | **Templates** | Five deterministic templates (Status Update, Client Update, Debug Report, Handover, Weekly Summary) |
@@ -62,10 +62,11 @@ The title bar workflow pill shows: Context → Template → Draft → Review →
 | **Export** | TXT, MD, JSON, PDF |
 | **Startup** | Light GrafiTalk splash on cold start |
 | **Grafi advisor** | Upstream Grafi UI (bottom-left portal host) |
-| **Read-aloud** | Web Speech API when supported |
-| **Diagnostics** | Version, DB path, backup export, read-aloud preference |
+| **Settings** | Dedicated workspace: Grafi, read-aloud, export placeholder, About / Diagnostics |
+| **Read-aloud** | Web Speech API when supported (speaker icon in Current Preview) |
+| **Diagnostics** | Version, DB path, backup export (About / Diagnostics in Settings) |
 
-**Grafi advisor:** Reintegrated from upstream [Grafi](https://github.com/csjozsefdev/Grafi) via a body portal host. The **startup splash** remains separate.
+**Note:** Grafi advisor is reintegrated from upstream [Grafi](https://github.com/csjozsefdev/Grafi) via a bottom-left portal host. Disable Grafi or adjust motion in **Settings → Grafi**. The **startup splash** uses a separate light GrafiTalk asset.
 
 ## Local-first philosophy
 
@@ -90,10 +91,21 @@ Details: [User guide](docs/USER_GUIDE.md)
 
 ## Quick start (developers)
 
+### Prerequisites
+
+- [Rust](https://rustup.rs/) toolchain
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- Windows (primary target for Core RC)
+
+### Install and run
+
 ```powershell
 cd C:\Projektek\Grafitalk
+cd frontend && npm install && cd ..
 npx @tauri-apps/cli dev
 ```
+
+### Test and build
 
 ```powershell
 cargo test -p backend
@@ -117,6 +129,7 @@ Details: [Developer guide](docs/DEVELOPER_GUIDE.md) · [Release notes (RC)](docs
 
 | Document | Purpose |
 |----------|---------|
+| [Project status](docs/PROJECT_STATUS.md) | Completed features, remaining work, limitations |
 | [User guide](docs/USER_GUIDE.md) | Daily use, workflow, UI areas |
 | [Developer guide](docs/DEVELOPER_GUIDE.md) | Repo layout, dev setup, pipelines |
 | [Architecture](docs/ARCHITECTURE.md) | Data flow, persistence, IPC |
@@ -138,7 +151,7 @@ Details: [Developer guide](docs/DEVELOPER_GUIDE.md) · [Release notes (RC)](docs
 
 | In scope | Out of scope |
 |----------|--------------|
-| Projects: create, list, select, rename, archive, restore | AI / LLM generation |
+| Projects: create, list, select, rename, remove (archive), restore | AI / LLM generation |
 | Manual + imported context (Graf-ID) | Auto-send |
 | Five deterministic templates | Cloud sync |
 | Generate, review, edit, autosave | CRM / multi-user |

@@ -24,6 +24,10 @@ Manual verification for **GrafiTalk Core RC**. Run after meaningful changes to s
 
 - [ ] Empty state shows “No projects yet” when database is fresh
 - [ ] Three-panel layout: sidebar | Current Preview | Context
+- [ ] Context panel height capped — preview editor remains visible
+- [ ] Copy and Export buttons visible in action bar
+- [ ] No unwanted horizontal scrollbar at normal or maximized window width
+- [ ] Diagonal ambient background does not reduce text readability
 - [ ] Workflow bar shows Context → Template → Draft → Review → Copy
 - [ ] Dynamic workflow pill updates with project state
 
@@ -146,18 +150,20 @@ Manual verification for **GrafiTalk Core RC**. Run after meaningful changes to s
 
 ---
 
-## Project archive
+## Project remove (archive)
 
-- [ ] **Archive** opens app-styled confirmation (not native OS dialog)
-- [ ] Archived project disappears from active list
-- [ ] Archiving active project selects another project or empty state
-- [ ] When all projects archived, guidance message appears
+- [ ] Each project card shows a compact `⋯` menu
+- [ ] **Rename** opens name prompt with current project name
+- [ ] **Remove** opens app-styled confirmation (not native OS dialog)
+- [ ] Removed project disappears from active list (archived in SQLite — not hard-deleted)
+- [ ] Removing active project selects another project or empty state
+- [ ] When all projects removed/archived, guidance message appears
 
 ---
 
 ## Project rename
 
-- [ ] **Rename** opens name prompt with current project name
+- [ ] **Rename** (via `⋯` menu) opens name prompt with current project name
 - [ ] Empty name rejected
 - [ ] Rename preserves context, draft, and metadata
 - [ ] Rename failure shows sidebar error message
@@ -174,7 +180,27 @@ Manual verification for **GrafiTalk Core RC**. Run after meaningful changes to s
 
 ## Grafi Advisor
 
-The in-workbench Grafi advisor has been **temporarily removed** for a clean reimplementation in a later milestone. The startup splash remains.
+- [ ] Grafi figure visible bottom-left on workbench (when enabled in Settings)
+- [ ] Settings → Grafi → disable hides Grafi entirely
+- [ ] Bubble **X** closes bubble only — Grafi figure remains
+- [ ] Clicking Grafi reopens bubble after dismiss
+- [ ] Transient success messages auto-collapse (~5.5 s)
+- [ ] Warning / error messages take priority over idle hints
+- [ ] Grafi does not cover Copy / Export / Generate controls
+- [ ] Grafi host does not introduce page scrollbars
+
+---
+
+## Settings
+
+- [ ] **Settings** link in sidebar opens dedicated settings workspace (not a cramped modal)
+- [ ] **Back to workbench** returns to three-panel layout
+- [ ] Escape closes Settings
+- [ ] Grafi toggles persist across restart (localStorage)
+- [ ] Read-aloud toggle persists
+- [ ] Voice selector shows disabled “coming later” placeholder
+- [ ] About / Diagnostics loads version, DB path, project count
+- [ ] Export database backup works from About / Diagnostics
 
 ---
 
@@ -187,13 +213,12 @@ The in-workbench Grafi advisor has been **temporarily removed** for a clean reim
 
 ---
 
-## Title bar and diagnostics
+## Title bar and window
 
 - [ ] Native OS title bar hidden; custom bar shows brand + workflow + window controls
+- [ ] Title bar icon shows Grafi head only (transparent PNG — no white square plate)
 - [ ] Minimize, maximize, close work; drag region moves window
-- [ ] About button opens diagnostics modal
-- [ ] Export database backup creates a `.db` copy
-- [ ] [BACKUP_RESTORE.md](BACKUP_RESTORE.md) steps reviewed (optional manual restore test)
+- [ ] Settings (sidebar) opens diagnostics / backup — not a separate modal
 
 ---
 
@@ -222,7 +247,7 @@ npm run test --prefix frontend
 npm run lint --prefix frontend
 ```
 
-Expected: all backend tests pass (134+), frontend tests pass (29+), hardening matrix in `backend/src/hardening/matrix.rs` passes.
+Expected: all backend tests pass (134), frontend tests pass (51), hardening matrix in `backend/src/hardening/matrix.rs` passes.
 
 Release build: `.\scripts\release.ps1`
 
@@ -236,7 +261,8 @@ Human validation: [RC_1_0_RELEASE_VALIDATION.md](RC_1_0_RELEASE_VALIDATION.md)
 |------|------|-------|
 | Startup / splash | | |
 | Projects (create / select) | | |
-| Rename / archive / restore | | |
+| Rename / remove / restore | | |
+| Settings | | |
 | Context | | |
 | Import | | |
 | Templates | | |
@@ -245,7 +271,7 @@ Human validation: [RC_1_0_RELEASE_VALIDATION.md](RC_1_0_RELEASE_VALIDATION.md)
 | Copy | | |
 | Export (TXT/MD/JSON/PDF) | | |
 | Grafi / read-aloud | | |
-| Title bar / diagnostics | | |
+| Layout | | |
 | Persistence | | |
 | Errors | | |
 

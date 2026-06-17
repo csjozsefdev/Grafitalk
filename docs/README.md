@@ -61,6 +61,7 @@ Human-readable guides for using and working on GrafiTalk Core RC.
 
 | Document | Purpose |
 |----------|---------|
+| [Project status](PROJECT_STATUS.md) | Completed features, remaining work, known limitations |
 | [Progress](PROGRESS.md) | Milestone checklist |
 
 ---

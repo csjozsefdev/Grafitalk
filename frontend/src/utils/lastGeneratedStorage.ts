@@ -24,11 +24,3 @@ export function loadLastGeneratedByProject(): Record<string, number> {
     return {};
   }
 }
-
-export function saveLastGeneratedByProject(map: Record<string, number>): void {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(map));
-  } catch (err) {
-    console.error("Failed to save last generated timestamps", err);
-  }
-}

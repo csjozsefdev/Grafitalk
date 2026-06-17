@@ -51,16 +51,16 @@
 | Check | Status |
 |-------|--------|
 | Dynamic workflow indicator | ✓ `deriveWorkflowStep` |
-| Archive project UI + IPC | ✓ |
+| Archive project UI + IPC (Remove via `⋯` menu) | ✓ |
 | Template dirty confirm | ✓ |
 | Grafi advisor (local) | ✓ Upstream Grafi @ `23fd1c3` via body portal host |
 | Read-aloud (Web Speech) | ✓ |
 | Custom title bar (Windows) | ✓ |
-| Diagnostics + DB backup | ✓ |
+| Diagnostics + DB backup | ✓ Settings → About / Diagnostics |
 | `scripts/release.ps1` | ✓ |
 | Project rename + archive restore | ✓ |
 | GrafiTalk startup splash (light theme) | ✓ |
-| Frontend unit tests | ✓ Vitest (29+) |
+| Frontend unit tests | ✓ Vitest (51) |
 | Post-RC audit procedure | [POST_RC_AUDIT.md](POST_RC_AUDIT.md) |
 | Post-RC audit results | [RC_AUDIT_RESULTS.md](RC_AUDIT_RESULTS.md) — **CONDITIONAL GO** |
 
@@ -124,7 +124,7 @@ Before PR 1, Graf-ID-style labeled context collapsed into a single **Focus Area*
 
 ### Projects
 
-- Create, list, select, **rename**, **archive**, and **restore** active projects
+- Create, list, select, **rename**, **remove (archive)**, and **restore** active projects via sidebar `⋯` menu
 
 - `last_used_at` updated on selection
 
@@ -220,9 +220,9 @@ Before PR 1, Graf-ID-style labeled context collapsed into a single **Focus Area*
 - Grafi advisor via upstream Grafi (`createPortal` + `.gt-grafi-host`)
 - Read-aloud via Web Speech API
 - Custom title bar with window controls (`decorations: false`)
-- Diagnostics modal: version, DB path, backup export, read-aloud preference
+- **Settings workspace** (Grafi, read-aloud, export placeholder, About / Diagnostics)
 - GrafiTalk startup splash (light theme; `GrafiTalkSplash` wrapper)
-- Project rename, archive, restore with app-styled dialogs
+- Project rename, remove (archive), restore with app-styled dialogs
 
 ---
 
@@ -258,7 +258,7 @@ Before PR 1, Graf-ID-style labeled context collapsed into a single **Focus Area*
 
 | Export failure safety | Does not mutate draft or export metadata |
 
-| Automated tests | 134+ backend tests; 29 frontend Vitest tests |
+| Automated tests | 134 backend tests; 51 frontend Vitest tests |
 
 Run manual QA: [QA checklist](QA_CHECKLIST.md). Release: `.\scripts\release.ps1`
 

@@ -194,11 +194,11 @@ Switching projects saves any pending edits first, so you should not lose work wh
 
 - **Import** (Context panel) — load Graf-ID handoff JSON, TXT, or MD
 - **Export** (toolbar) — save Current Preview as TXT, MD, JSON, or PDF
-- **Archive** (sidebar) — hide a project from the active list without deleting its data
-- **Restore** (archived section) — return an archived project to the active list
-- **Rename** (sidebar) — change the display name of an active project
+- **Remove** (sidebar `⋯` menu) — hide a project from the active list without deleting its data (archived in SQLite)
+- **Restore** (archived section) — return a removed project to the active list
+- **Rename** (sidebar `⋯` menu) — change the display name of an active project
 - **Read aloud** (speaker icon near Current Preview) — local text-to-speech when supported
-- **About / diagnostics** (title bar) — version, database path, backup, read-aloud preference
+- **Settings** (sidebar) — Grafi advisor, read-aloud, export placeholder; **About / Diagnostics** for version, database path, and backup
 
 Database backup and manual restore: [BACKUP_RESTORE.md](BACKUP_RESTORE.md)
 
